@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,299 +8,294 @@
   <title>Resume Studio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="brand">RESUME<span>STUDIO</span></div>
-  <p>Build your future, one resume at a time.</p>
-</header>
+  <header class="site-header">
+    <div class="brand">FUTURE<span>RESUME</span></div>
+    <p>Build your future, one resume at a time.</p>
+  </header>
 
-<main class="container">
-  <div class="welcome">
-    <div>
-      <p class="eyebrow">YOUR CAREER STARTS HERE</p>
-      <h1>Create Your Resume</h1>
-      <p class="subtitle">Complete the steps and build your professional resume.</p>
+  <main class="container">
+    <div class="welcome">
+      <div>
+        <p class="eyebrow">YOUR CAREER STARTS HERE</p>
+        <h1>Create Your Resume</h1>
+        <p class="subtitle">Complete the steps and build your professional resume.</p>
+      </div>
+      <div class="resume-icon">CV</div>
     </div>
-    <div class="resume-icon">CV</div>
-  </div>
 
-  <div class="progress-bar">
-    <div class="step-indicator active" data-step="1">01 Personal</div>
-    <div class="step-indicator" data-step="2">02 Experience</div>
-    <div class="step-indicator" data-step="3">03 Education</div>
-    <div class="step-indicator" data-step="4">04 Projects</div>
-    <div class="step-indicator" data-step="5">05 Certificates</div>
-    <div class="step-indicator" data-step="6">06 Skills</div>
-    <div class="step-indicator" data-step="7">07 Preview</div>
-  </div>
+    <div class="progress-bar">
+      <div class="step-indicator active" data-step="1">01 Personal</div>
+      <div class="step-indicator" data-step="2">02 Experience</div>
+      <div class="step-indicator" data-step="3">03 Education</div>
+      <div class="step-indicator" data-step="4">04 Projects</div>
+      <div class="step-indicator" data-step="5">05 Certificates</div>
+      <div class="step-indicator" data-step="6">06 Skills</div>
+      <div class="step-indicator" data-step="7">07 Preview</div>
+    </div>
 
-  <form id="resumeForm" novalidate>
-    <section class="form-step active" id="step1">
-      <div class="section-heading">
-        <span class="section-number">01</span>
-        <div>
-          <h2>Personal Information</h2>
-          <p>Enter your contact details.</p>
-        </div>
-      </div>
-
-      <div class="field-grid">
-        <div class="field">
-          <label for="fullName">Full Name *</label>
-          <input id="fullName" type="text" placeholder="Your full name" required>
-          <small class="error-message" id="nameError"></small>
-        </div>
-
-        <div class="field">
-          <label for="jobTitle">Job Role / Title</label>
-          <input id="jobTitle" type="text" placeholder="e.g. Software Developer">
-        </div>
-
-        <div class="field">
-          <label for="email">Email Address *</label>
-          <input id="email" type="email" placeholder="example@gmail.com"
-                 autocomplete="email" required>
-          <small class="error-message" id="emailError"></small>
-        </div>
-
-        <div class="field">
-          <label for="phone">Mobile Number *</label>
-          <input id="phone" type="tel" placeholder="9876543210"
-                 inputmode="numeric" maxlength="10" required>
-          <small class="error-message" id="phoneError"></small>
-        </div>
-
-        <div class="field full-width">
-          <label for="location">Location</label>
-          <input id="location" type="text" placeholder="City, State">
-        </div>
-      </div>
-
-      <div class="toggle-card">
-        <label class="checkbox-label">
-          <input type="checkbox" id="addLinksToggle">
-          <span>Add LinkedIn, GitHub and Portfolio links</span>
-        </label>
-
-        <div id="linksFields" class="field-grid hidden">
-          <div class="field">
-            <label for="linkedin">LinkedIn URL</label>
-            <input id="linkedin" type="url" placeholder="https://linkedin.com/in/yourname">
+    <form id="resumeForm" novalidate>
+      <section class="form-step active" id="step1">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <div>
+            <h2>Personal Information</h2>
+            <p>Enter your contact details.</p>
           </div>
+        </div>
+
+        <div class="field-grid">
           <div class="field">
-            <label for="github">GitHub URL</label>
-            <input id="github" type="url" placeholder="https://github.com/yourname">
+            <label for="fullName">Full Name *</label>
+            <input id="fullName" type="text" placeholder="Your full name" required>
+            <small class="error-message" id="nameError"></small>
           </div>
+
+          <div class="field">
+            <label for="jobTitle">Job Role / Title</label>
+            <input id="jobTitle" type="text" placeholder="e.g. Software Developer">
+          </div>
+
+          <div class="field">
+            <label for="email">Email Address *</label>
+            <input id="email" type="email" placeholder="example@gmail.com" autocomplete="email" required>
+            <small class="error-message" id="emailError"></small>
+          </div>
+
+          <div class="field">
+            <label for="phone">Mobile Number *</label>
+            <input id="phone" type="tel" placeholder="9876543210" inputmode="numeric" maxlength="10" required>
+            <small class="error-message" id="phoneError"></small>
+          </div>
+
           <div class="field full-width">
-            <label for="portfolio">Portfolio URL</label>
-            <input id="portfolio" type="url" placeholder="https://yourportfolio.com">
+            <label for="location">Location</label>
+            <input id="location" type="text" placeholder="City, State">
           </div>
         </div>
-      </div>
 
-      <div class="field">
-        <label for="summary">Profile Summary</label>
-        <textarea id="summary" rows="4"
-          placeholder="Write a short professional introduction..."></textarea>
-      </div>
+        <div class="toggle-card">
+          <label class="checkbox-label">
+            <input type="checkbox" id="addLinksToggle">
+            <span>Add LinkedIn, GitHub and Portfolio links</span>
+          </label>
 
-      <div class="btn-row">
-        <span class="save-status" id="saveStatus">Draft ready</span>
-        <button type="button" class="btn-next" data-next="2">Continue →</button>
-      </div>
-    </section>
-
-    <section class="form-step" id="step2">
-      <div class="section-heading">
-        <span class="section-number">02</span>
-        <div>
-          <h2>Work Experience</h2>
-          <p>Tell us about your experience or internships.</p>
+          <div id="linksFields" class="field-grid hidden">
+            <div class="field">
+              <label for="linkedin">LinkedIn URL</label>
+              <input id="linkedin" type="url" placeholder="https://linkedin.com/in/yourname">
+            </div>
+            <div class="field">
+              <label for="github">GitHub URL</label>
+              <input id="github" type="url" placeholder="https://github.com/yourname">
+            </div>
+            <div class="field full-width">
+              <label for="portfolio">Portfolio URL</label>
+              <input id="portfolio" type="url" placeholder="https://yourportfolio.com">
+            </div>
+          </div>
         </div>
-      </div>
 
-      <label>What is your current status?</label>
-      <div class="radio-row">
-        <label class="radio-label">
-          <input type="radio" name="expStatus" value="experienced">
-          Experienced
-        </label>
-        <label class="radio-label">
-          <input type="radio" name="expStatus" value="fresher" checked>
-          Fresher
-        </label>
-      </div>
+        <div class="field">
+          <label for="summary">Profile Summary</label>
+          <textarea id="summary" rows="4" placeholder="Write a short professional introduction..."></textarea>
+        </div>
 
-      <div id="experienceSection" class="hidden">
-        <h3 class="subheading">Work Details</h3>
-        <div id="experienceList"></div>
-        <button type="button" id="addExperience" class="btn-add">
-          + Add Experience
-        </button>
-      </div>
+        <div class="btn-row">
+          <span class="save-status" id="saveStatus">Draft ready</span>
+          <button type="button" class="btn-next" data-next="2">Continue →</button>
+        </div>
+      </section>
 
-      <div id="fresherSection">
-        <h3 class="subheading">Internship</h3>
-        <label>Have you completed an internship?</label>
+      <section class="form-step" id="step2">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <div>
+            <h2>Work Experience</h2>
+            <p>Tell us about your experience or internships.</p>
+          </div>
+        </div>
+
+        <label>What is your current status?</label>
         <div class="radio-row">
           <label class="radio-label">
-            <input type="radio" name="internshipStatus" value="yes">
-            Yes
+            <input type="radio" name="expStatus" value="experienced">
+            Experienced
           </label>
           <label class="radio-label">
-            <input type="radio" name="internshipStatus" value="no" checked>
-            No
+            <input type="radio" name="expStatus" value="fresher" checked>
+            Fresher
           </label>
         </div>
 
-        <div id="internshipSection" class="hidden">
-          <div id="internshipList"></div>
-          <button type="button" id="addInternship" class="btn-add">
-            + Add Internship
+        <div id="experienceSection" class="hidden">
+          <h3 class="subheading">Work Details</h3>
+          <div id="experienceList"></div>
+          <button type="button" id="addExperience" class="btn-add">
+            + Add Experience
           </button>
         </div>
-      </div>
 
-      <div class="btn-row">
-        <button type="button" class="btn-prev" data-prev="1">← Back</button>
-        <button type="button" class="btn-next" data-next="3">Continue →</button>
-      </div>
-    </section>
+        <div id="fresherSection">
+          <h3 class="subheading">Internship</h3>
+          <label>Have you completed an internship?</label>
+          <div class="radio-row">
+            <label class="radio-label">
+              <input type="radio" name="internshipStatus" value="yes">
+              Yes
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="internshipStatus" value="no" checked>
+              No
+            </label>
+          </div>
 
-    <section class="form-step" id="step3">
-      <div class="section-heading">
-        <span class="section-number">03</span>
-        <div>
-          <h2>Education</h2>
-          <p>Add your academic qualifications.</p>
+          <div id="internshipSection" class="hidden">
+            <div id="internshipList"></div>
+            <button type="button" id="addInternship" class="btn-add">
+              + Add Internship
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div id="educationList"></div>
-      <button type="button" id="addEducation" class="btn-add">
-        + Add Education
-      </button>
-
-      <div class="btn-row">
-        <button type="button" class="btn-prev" data-prev="2">← Back</button>
-        <button type="button" class="btn-next" data-next="4">Continue →</button>
-      </div>
-    </section>
-
-    <section class="form-step" id="step4">
-      <div class="section-heading">
-        <span class="section-number">04</span>
-        <div>
-          <h2>Projects</h2>
-          <p>Showcase your academic and personal projects.</p>
+        <div class="btn-row">
+          <button type="button" class="btn-prev" data-prev="1">← Back</button>
+          <button type="button" class="btn-next" data-next="3">Continue →</button>
         </div>
-      </div>
+      </section>
 
-      <div id="projectsList"></div>
-      <button type="button" id="addProject" class="btn-add">
-        + Add Project
-      </button>
-
-      <div class="btn-row">
-        <button type="button" class="btn-prev" data-prev="3">← Back</button>
-        <button type="button" class="btn-next" data-next="5">Continue →</button>
-      </div>
-    </section>
-
-    <section class="form-step" id="step5">
-      <div class="section-heading">
-        <span class="section-number">05</span>
-        <div>
-          <h2>Certifications</h2>
-          <p>Add certificates relevant to your career.</p>
+      <section class="form-step" id="step3">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <div>
+            <h2>Education</h2>
+            <p>Add your academic qualifications.</p>
+          </div>
         </div>
-      </div>
 
-      <p class="hint-text">Optional — skip this step if you have no certificates.</p>
-      <div id="certificationsList"></div>
-      <button type="button" id="addCertification" class="btn-add">
-        + Add Certification
-      </button>
-
-      <div class="btn-row">
-        <button type="button" class="btn-prev" data-prev="4">← Back</button>
-        <button type="button" class="btn-next" data-next="6">Continue →</button>
-      </div>
-    </section>
-
-    <section class="form-step" id="step6">
-      <div class="section-heading">
-        <span class="section-number">06</span>
-        <div>
-          <h2>Skills & ATS Check</h2>
-          <p>Highlight your skills and compare them with a job description.</p>
-        </div>
-      </div>
-
-      <div class="field">
-        <label for="skillsInput">Your Skills *</label>
-        <input id="skillsInput" type="text"
-          placeholder="C, HTML, CSS, JavaScript, SQL">
-        <small class="hint-text">Separate each skill with a comma.</small>
-      </div>
-
-      <div id="skillsPreview" class="skills-preview"></div>
-
-      <div class="field">
-        <label for="targetJD">Job Description</label>
-        <textarea id="targetJD" rows="5"
-          placeholder="Paste the job description here for keyword matching..."></textarea>
-      </div>
-
-      <button type="button" id="checkAts" class="btn-ai">
-        Check ATS Keywords
-      </button>
-      <div id="atsResult" class="ats-result hidden" aria-live="polite"></div>
-
-      <div class="btn-row">
-        <button type="button" class="btn-prev" data-prev="5">← Back</button>
-        <button type="button" class="btn-next" data-next="7">Preview Resume →</button>
-      </div>
-    </section>
-
-    <section class="form-step" id="step7">
-      <div class="section-heading">
-        <span class="section-number">07</span>
-        <div>
-          <h2>Your Resume</h2>
-          <p>Choose a design and review your details before printing.</p>
-        </div>
-      </div>
-
-      <div class="template-selector">
-        <button type="button" class="template-option active"
-          data-template="classic">Classic</button>
-        <button type="button" class="template-option"
-          data-template="modern">Modern</button>
-        <button type="button" class="template-option"
-          data-template="minimal">Minimal</button>
-      </div>
-
-      <div id="resumePreview" class="resume-preview classic"></div>
-
-      <div class="btn-row">
-        <button type="button" class="btn-prev" data-prev="6">← Back</button>
-        <button type="button" id="downloadPdf" class="btn-download">
-          Print / Save as PDF
+        <div id="educationList"></div>
+        <button type="button" id="addEducation" class="btn-add">
+          + Add Education
         </button>
-      </div>
-    </section>
-  </form>
 
-  <footer class="site-footer">
-    <p>Resume Studio · Build your career with confidence</p>
-    <button type="button" id="clearDraft" class="btn-text">
-      Clear saved draft
-    </button>
-  </footer>
-</main>
+        <div class="btn-row">
+          <button type="button" class="btn-prev" data-prev="2">← Back</button>
+          <button type="button" class="btn-next" data-next="4">Continue →</button>
+        </div>
+      </section>
 
-<script src="script.js"></script>
+      <section class="form-step" id="step4">
+        <div class="section-heading">
+          <span class="section-number">04</span>
+          <div>
+            <h2>Projects</h2>
+            <p>Showcase your academic and personal projects.</p>
+          </div>
+        </div>
+
+        <div id="projectsList"></div>
+        <button type="button" id="addProject" class="btn-add">
+          + Add Project
+        </button>
+
+        <div class="btn-row">
+          <button type="button" class="btn-prev" data-prev="3">← Back</button>
+          <button type="button" class="btn-next" data-next="5">Continue →</button>
+        </div>
+      </section>
+
+      <section class="form-step" id="step5">
+        <div class="section-heading">
+          <span class="section-number">05</span>
+          <div>
+            <h2>Certifications</h2>
+            <p>Add certificates relevant to your career.</p>
+          </div>
+        </div>
+
+        <p class="hint-text">Optional — skip this step if you have no certificates.</p>
+        <div id="certificationsList"></div>
+        <button type="button" id="addCertification" class="btn-add">
+          + Add Certification
+        </button>
+
+        <div class="btn-row">
+          <button type="button" class="btn-prev" data-prev="4">← Back</button>
+          <button type="button" class="btn-next" data-next="6">Continue →</button>
+        </div>
+      </section>
+
+      <section class="form-step" id="step6">
+        <div class="section-heading">
+          <span class="section-number">06</span>
+          <div>
+            <h2>Skills & ATS Check</h2>
+            <p>Highlight your skills and compare them with a job description.</p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="skillsInput">Your Skills *</label>
+          <input id="skillsInput" type="text" placeholder="C, HTML, CSS, JavaScript, SQL">
+          <small class="hint-text">Separate each skill with a comma.</small>
+        </div>
+
+        <div id="skillsPreview" class="skills-preview"></div>
+
+        <div class="field">
+          <label for="targetJD">Job Description</label>
+          <textarea id="targetJD" rows="5"
+            placeholder="Paste the job description here for keyword matching..."></textarea>
+        </div>
+
+        <button type="button" id="checkAts" class="btn-ai">
+          Check ATS Keywords
+        </button>
+        <div id="atsResult" class="ats-result hidden" aria-live="polite"></div>
+
+        <div class="btn-row">
+          <button type="button" class="btn-prev" data-prev="5">← Back</button>
+          <button type="button" class="btn-next" data-next="7">Preview Resume →</button>
+        </div>
+      </section>
+
+      <section class="form-step" id="step7">
+        <div class="section-heading">
+          <span class="section-number">07</span>
+          <div>
+            <h2>Your Resume</h2>
+            <p>Choose a design and review your details before printing.</p>
+          </div>
+        </div>
+
+        <div class="template-selector">
+          <button type="button" class="template-option active" data-template="classic">Classic</button>
+          <button type="button" class="template-option" data-template="modern">Modern</button>
+          <button type="button" class="template-option" data-template="minimal">Minimal</button>
+        </div>
+
+        <div id="resumePreview" class="resume-preview classic"></div>
+
+        <div class="btn-row">
+          <button type="button" class="btn-prev" data-prev="6">← Back</button>
+          <button type="button" id="downloadPdf" class="btn-download">
+            Print / Save as PDF
+          </button>
+        </div>
+      </section>
+    </form>
+
+    <footer class="site-footer">
+      <p>Resume Studio · Build your career with confidence</p>
+      <button type="button" id="clearDraft" class="btn-text">
+        Clear saved draft
+      </button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
